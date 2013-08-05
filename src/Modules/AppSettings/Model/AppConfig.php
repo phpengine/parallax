@@ -64,7 +64,7 @@ class AppConfig {
     }
 
     private static function loadAppFile() {
-        $appFile = self::getAppBaseDir().'/dapperapp';
+        $appFile = self::getAppBaseDir().'/parallaxapp';
         if (!file_exists($appFile)){ shell_exec("touch ".$appFile); }
         $appConfigArrayJSON = file_get_contents($appFile);
         $decoded = json_decode($appConfigArrayJSON);
@@ -75,7 +75,7 @@ class AppConfig {
     private static function saveAppFile($appConfigArray) {
         $appConfigObject = new \ArrayObject($appConfigArray);
         $appConfigObjectJSON = json_encode($appConfigObject);
-        file_put_contents(self::getAppBaseDir().'/dapperapp', $appConfigObjectJSON);
+        file_put_contents(self::getAppBaseDir().'/parallaxapp', $appConfigObjectJSON);
     }
 
     private static function getAppBaseDir() {

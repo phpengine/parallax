@@ -1,23 +1,18 @@
-Dapperstrano by Golden Contact Computing
+Parallax by Golden Contact Computing
 -------------------
 
 About:
 -----------------
-This tool helps with setting up projects. It's really cool for
-cloning/installing/spinning up webs apps easily and quickly.
+This tool executes programs in Parallel. We use it to execute
+concurrent Selenium Grid Tests, through Ruby/Rake/Cucumber.
 
-Very cool for CI, you can install your web app in one line like:
+In your CI, you can execute like so:
 
-dapperstrano install autopilot *autopilot-file*
+parallax autopilot execute *autopilot-file*
 
 With code configured settings for (at least the core parts, and
-more if want to extend) Project Checkout / Download, Cucumber
-Configuration, Database Management Functions, Host File
-Management Functions, Installation Functions, SSH Invocation
-Functions, Dapperstrano Project Management Functions, Apache
-Virtual Host Functions and Versioning - On 1 or 100 servers, so
-you now have a fully code controlled deploy system, from
-Personal or Development machine to Large Enterprise.
+more if want to extend) the command that will execute each test
+group.
 
 -------------------------------------------------------------
 

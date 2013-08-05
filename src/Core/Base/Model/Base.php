@@ -11,7 +11,7 @@ class Base {
       $tempDirInConfig = \Model\AppConfig::getAppVariable("temp-directory") ;
       $tempDirInConfig = (substr($tempDirInConfig, -1, 1) == "/") ?
         substr($tempDirInConfig, 0, strlen($tempDirInConfig)-1) : $tempDirInConfig ;
-      $this->baseTempDir = ($tempDirInConfig == null ) ? "/tmp/dapperstrano" : $tempDirInConfig ;
+      $this->baseTempDir = ($tempDirInConfig == null ) ? "/tmp/parallax" : $tempDirInConfig ;
     }
 
     protected function executeAndOutput($command, $message=null) {

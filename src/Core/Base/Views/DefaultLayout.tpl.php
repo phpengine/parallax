@@ -1,6 +1,6 @@
 
 ******************************
-Dapperstrano
+Parallax
 ******************************
 
 <?php echo $this->renderMessages($pageVars); ?>

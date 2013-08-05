@@ -1,0 +1,98 @@
+<?php
+
+Namespace Model;
+
+class Cli extends Base {
+
+    private $arrayOfCommands = array();
+    private $commandResults = array();
+
+    public function askWhetherToRunParallelCommand() {
+        $doRunParallel = $this->askToScreenWhetherToRunParallelCommand();
+        if ($doRunParallel != true) {
+            return false ; }
+        $this->askForAllCommands() ;
+        return $this->executeAllCommandInput() ;
+        // true;
+    }
+
+    public function askToScreenWhetherToRunParallelCommand() {
+        $question = 'Run Commands in Parallel?';
+        return self::askYesOrNo($question, true);
+    }
+
+    public function askForAllCommands() {
+        $commandInput = "anything";
+        while ($commandInput != "") {
+            $question = "Enter Command to include next. Enter none to end." ;
+            $commandInput = self::askForInput($question) ;
+            if ($commandInput != "") {
+              $this->arrayOfCommands[] = $commandInput ; } }
+    }
+
+    private function executeAllCommandInput() {
+      $allPlxOuts = array();
+      foreach ($this->arrayOfCommands as $command) {
+        $tempScript = $this->makeCommandFile($command);
+        $outfile = $this->getFileToWrite("final");
+        $cmd = 'parallax cx execute --command-to-execute="sh '.$tempScript.'" --output-file="'.$outfile.'" > /dev/null &';
+        // echo $cmd."\n";
+        system($cmd, $plxExit);
+        $allPlxOuts[] = array($tempScript, $outfile); }
+      $copyPlxOuts = $allPlxOuts;
+      // var_dump($allPlxOuts);
+      $fileData = "";
+      $ignores = array();
+      sleep(3);
+
+      while (count($this->commandResults) < count($allPlxOuts)) {
+        for ($i=0; $i<count($copyPlxOuts); $i++) {
+          if (in_array($i, $ignores)) {
+              continue; }
+          $fileToScan = $copyPlxOuts[$i][1];
+          $file = new \SplFileObject($fileToScan);
+          $file->seek(1);
+          $completionStatus = substr($file->current(), 10, 1);
+          if ($completionStatus=="1") {
+            $file->seek(0);
+            echo "Completed task: ".substr($file->current(), 10);
+            $file->seek(2);
+            $exitStatus = substr($file->current(), 13, 1);
+            $this->commandResults[] = $exitStatus;
+            $fileData .= file_get_contents($fileToScan);
+            $ignores[] = $i; }}
+        echo ".";
+        sleep(3); }
+        $anyFailures = in_array("1", $this->commandResults);
+        return array ($fileData, $anyFailures);
+    }
+
+    private function makeCommandFile($command) {
+        $random = $this->baseTempDir.DIRECTORY_SEPARATOR.mt_rand(100, 99999999999);
+        $this->makeParentDirIfNeeded($this->baseTempDir);
+        file_put_contents($random.'-parallax-temp.sh', $command);
+        return $random.'-parallax-temp.sh';
+    }
+
+    private function makeParentDirIfNeeded($fileName) {
+      if (!file_exists(dirname($fileName))) {
+        mkdir(dirname($fileName), 0777, true) ; }
+    }
+
+    private function findFilenameFromOutput($outputText) {
+        foreach ($outputText as $lineOfText) {
+            if (strlen($lineOfText)>0) {
+                echo "finalfile: $lineOfText\n";
+                return $lineOfText; } }
+        return null;
+    }
+
+    private function getFileToWrite($file_type) {
+      $random = $this->baseTempDir.DIRECTORY_SEPARATOR.mt_rand(100, 99999999999);
+      $this->makeParentDirIfNeeded($this->baseTempDir);
+      if ($file_type == "temp") { return $random.'temp.txt'; }
+      if ($file_type == "final") { return $random.'final.txt'; }
+      else { return null ; }
+    }
+
+}

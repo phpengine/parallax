@@ -58,6 +58,27 @@ or override currently implemented classes with your own. Put them in here. Simpl
 
 
 
+
+Usage:
+-----------------
+
+So, there are a few simple commands...
+
+First, you can just use
+
+cleopatra
+
+...This will give you a list of the available modules...
+
+
+Then you can use
+
+cleopatra *ModuleName* help
+
+...This will display the help for that module, and tell you a list of available alias for the module command, and the
+available actions too.
+
+
 Available Commands:
 ---------------------------------------
 
