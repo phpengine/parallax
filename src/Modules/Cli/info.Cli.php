@@ -20,6 +20,16 @@ class CliInfo extends Base {
       return array("cli"=>"Cli");
     }
 
+    public function autoPilotVariables() {
+      return array(
+        "Cli" => array(
+          "cliExecute" => array(
+            "cliExecute" => "boolean",
+            "cliCommands" => "string-array" ) ,
+        ) ,
+      );
+    }
+
     public function helpDefinition() {
       $help = <<<"HELPDATA"
   This command is part of Core and provides you with a method by which you can

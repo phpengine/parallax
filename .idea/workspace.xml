@@ -1,10 +1,121 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9990e296-845b-4edb-b1ab-9a166fd4c1c8" name="Default" comment="" />
+    <list default="true" id="ef316dd2-e3b3-4032-b0b8-e9b51456a6c9" name="Default" comment="Merge branch 'master' of https://github.com/phpengine/parallax&#10;&#10;Conflicts:&#10;&#9;README.md&#10;">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dapper" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dapperstrano" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Modules/Checkout/Controller/Checkout.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Modules/Checkout/Model/CheckoutGit.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Modules/Checkout/Views/CheckoutView.tpl.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Modules/Checkout/info.Checkout.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Modules/CukeConf/Controller/CukeConf.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Modules/CukeConf/Model/CukeConf.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Modules/CukeConf/Views/CukeConfView.tpl.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Modules/CukeConf/info.CukeConf.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Modules/Database/Controller/Database.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Modules/Database/Model/DBConfigure.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Modules/Database/Model/DBConfigureDataDrupal70.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Modules/Database/Model/DBConfigureDataGCFW2.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Modules/Database/Model/DBConfigureDataJoomla15.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Modules/Database/Model/DBConfigureDataJoomla30.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Modules/Database/Model/DBInstall.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Modules/Database/Views/DatabaseView.tpl.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Modules/Database/info.Database.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Modules/HostEditor/Controller/HostEditor.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Modules/HostEditor/Model/HostEditor.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Modules/HostEditor/Views/HostEditorView.tpl.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Modules/HostEditor/info.HostEditor.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Modules/Invoke/Controller/Invoke.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Modules/Invoke/Libraries/seclib/Crypt/AES.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Modules/Invoke/Libraries/seclib/Crypt/DES.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Modules/Invoke/Libraries/seclib/Crypt/Hash.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Modules/Invoke/Libraries/seclib/Crypt/RC4.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Modules/Invoke/Libraries/seclib/Crypt/RSA.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Modules/Invoke/Libraries/seclib/Crypt/Random.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Modules/Invoke/Libraries/seclib/Crypt/Rijndael.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Modules/Invoke/Libraries/seclib/Crypt/TripleDES.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Modules/Invoke/Libraries/seclib/File/ANSI.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Modules/Invoke/Libraries/seclib/File/ASN1.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Modules/Invoke/Libraries/seclib/File/X509.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Modules/Invoke/Libraries/seclib/Math/BigInteger.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Modules/Invoke/Libraries/seclib/Net/SFTP.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Modules/Invoke/Libraries/seclib/Net/SSH1.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Modules/Invoke/Libraries/seclib/Net/SSH2.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Modules/Invoke/Libraries/seclib/openssl.cnf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Modules/Invoke/Model/InvokeSSH.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Modules/Invoke/Views/InvokeView.tpl.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Modules/Invoke/info.Invoke.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Modules/Project/Controller/Project.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Modules/Project/Model/Project.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Modules/Project/Views/ProjectView.tpl.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Modules/Project/info.Project.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Modules/VHostEditor/Controller/VHostEditor.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Modules/VHostEditor/Model/VHostEditor.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Modules/VHostEditor/Views/VhostEditorView.tpl.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Modules/VHostEditor/info.VHostEditor.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Modules/Version/Controller/Version.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Modules/Version/Model/Version.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Modules/Version/Views/VersionView.tpl.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Modules/Version/info.Version.php" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.name" afterPath="$PROJECT_DIR$/.idea/.name" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Modules/Cli/Model/Cli.php" afterPath="$PROJECT_DIR$/src/Modules/Cli/Model/Cli.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Modules/Generator/Model/Generator.php" afterPath="$PROJECT_DIR$/src/Modules/Generator/Model/Generator.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Modules/Autopilot/info.Autopilot.php" afterPath="$PROJECT_DIR$/src/Modules/Autopilot/info.Autopilot.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Modules/Cli/info.Cli.php" afterPath="$PROJECT_DIR$/src/Modules/Cli/info.Cli.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Modules/CommandExec/info.CommandExec.php" afterPath="$PROJECT_DIR$/src/Modules/CommandExec/info.CommandExec.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Modules/Generator/info.Generator.php" afterPath="$PROJECT_DIR$/src/Modules/Generator/info.Generator.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" afterPath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="dapperstrano.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="9990e296-845b-4edb-b1ab-9a166fd4c1c8" time="1373107001001" ignored="false" />
+    <file path="/Dummy.txt" changelist="ef316dd2-e3b3-4032-b0b8-e9b51456a6c9" time="1375702604978" ignored="false" />
+    <file path="/a.dummy" changelist="ef316dd2-e3b3-4032-b0b8-e9b51456a6c9" time="1375580505116" ignored="false" />
+    <file path="/var/www/imperial-invites/build/config/dapperstrano/autopilots/auto-dev-install.php" changelist="ef316dd2-e3b3-4032-b0b8-e9b51456a6c9" time="1375014647094" ignored="false" />
+    <file path="/var/www/imperial-invites/build/config/dapperstrano/autopilots/auto-dev-jenkins-install.php" changelist="ef316dd2-e3b3-4032-b0b8-e9b51456a6c9" time="1375007650326" ignored="false" />
+    <file path="/var/www/imperial-invites/build/config/dapperstrano/autopilots/auto-dev-jenkins-uninstall.php" changelist="ef316dd2-e3b3-4032-b0b8-e9b51456a6c9" time="1375007654558" ignored="false" />
+    <file path="/var/www/imperial-invites/build/config/dapperstrano/autopilots/auto-dev-reinstall.php" changelist="ef316dd2-e3b3-4032-b0b8-e9b51456a6c9" time="1375014658530" ignored="false" />
+    <file path="/var/www/imperial-invites/build/config/dapperstrano/autopilots/auto-dev-uninstall.php" changelist="ef316dd2-e3b3-4032-b0b8-e9b51456a6c9" time="1375007657644" ignored="false" />
+    <file path="/var/www/imperial-invites/build/config/dapperstrano/autopilots/auto-prod-revision-install.php" changelist="ef316dd2-e3b3-4032-b0b8-e9b51456a6c9" time="1375007659219" ignored="false" />
+    <file path="/var/www/imperial-invites/build/config/dapperstrano/autopilots/auto-prod-revision-invoke.php" changelist="ef316dd2-e3b3-4032-b0b8-e9b51456a6c9" time="1375009111992" ignored="false" />
+    <file path="/var/www/imperial-invites/build/config/dapperstrano/autopilots/auto-prod-uninstall.php" changelist="ef316dd2-e3b3-4032-b0b8-e9b51456a6c9" time="1375007663496" ignored="false" />
+    <file path="/var/www/imperial-invites/build/config/dapperstrano/autopilots/auto-stage-revision-install.php" changelist="ef316dd2-e3b3-4032-b0b8-e9b51456a6c9" time="1375007664919" ignored="false" />
+    <file path="/var/www/imperial-invites/build/config/dapperstrano/autopilots/auto-stage-revision-invoke.php" changelist="ef316dd2-e3b3-4032-b0b8-e9b51456a6c9" time="1375007666752" ignored="false" />
+    <file path="/var/www/imperial-invites/src/configuration.php" changelist="ef316dd2-e3b3-4032-b0b8-e9b51456a6c9" time="1375019600257" ignored="false" />
+    <file path="/var/www/bluevip/build/config/dapperstrano/autopilots/auto-dev-install.php" changelist="ef316dd2-e3b3-4032-b0b8-e9b51456a6c9" time="1375014691584" ignored="false" />
+    <file path="/var/www/bluevip/build/config/dapperstrano/autopilots/auto-dev-reinstall.php" changelist="ef316dd2-e3b3-4032-b0b8-e9b51456a6c9" time="1375014707129" ignored="false" />
+    <file path="/index.php" changelist="ef316dd2-e3b3-4032-b0b8-e9b51456a6c9" time="1375020449052" ignored="false" />
+    <file path="/var/www/imperial-invites/src/templates/protostar/index.php" changelist="ef316dd2-e3b3-4032-b0b8-e9b51456a6c9" time="1375020449052" ignored="false" />
+    <file path="/var/www/imperial-invites/src/plugins/content/ticketpopulate/ticketpopulate.php" changelist="ef316dd2-e3b3-4032-b0b8-e9b51456a6c9" time="1375045630713" ignored="false" />
+    <file path="/ticketpopulate.php" changelist="ef316dd2-e3b3-4032-b0b8-e9b51456a6c9" time="1375044514114" ignored="false" />
+    <file path="/var/www/imperial-invites/src/plugins/content/ticketpopulate/ticketpopulate.xml" changelist="ef316dd2-e3b3-4032-b0b8-e9b51456a6c9" time="1375027034446" ignored="false" />
+    <file path="/ticketpopulate.xml" changelist="ef316dd2-e3b3-4032-b0b8-e9b51456a6c9" time="1375027029304" ignored="false" />
+    <file path="/var/www/imperial-invites/src/templates/dj_page/positions/event_brand/content/mainbody.php" changelist="ef316dd2-e3b3-4032-b0b8-e9b51456a6c9" time="1375043580457" ignored="false" />
+    <file path="/mainbody.php" changelist="ef316dd2-e3b3-4032-b0b8-e9b51456a6c9" time="1375040247425" ignored="false" />
+    <file path="/var/www/imperial-invites/src/libraries/cck/content/article.php" changelist="ef316dd2-e3b3-4032-b0b8-e9b51456a6c9" time="1375043867261" ignored="false" />
+    <file path="/article.php" changelist="ef316dd2-e3b3-4032-b0b8-e9b51456a6c9" time="1375043557708" ignored="false" />
+    <file path="/README" changelist="ef316dd2-e3b3-4032-b0b8-e9b51456a6c9" time="1375376999786" ignored="false" />
+    <file path="/homepage.rb" changelist="ef316dd2-e3b3-4032-b0b8-e9b51456a6c9" time="1375445504300" ignored="false" />
+    <file path="/var/www/goodfood-application/tests/functional/GoodFoodPSP_Scripts/features/step_definitions/homepage.rb" changelist="ef316dd2-e3b3-4032-b0b8-e9b51456a6c9" time="1375445504300" ignored="false" />
+    <file path="/IndexView.tpl.php" changelist="ef316dd2-e3b3-4032-b0b8-e9b51456a6c9" time="1375379013540" ignored="false" />
+    <file path="/CommandExec.php" changelist="ef316dd2-e3b3-4032-b0b8-e9b51456a6c9" time="1375698846720" ignored="false" />
+    <file path="/var/www/goodfood-application/tests/functional/GoodFoodPSP_Scripts/features/homepage.feature" changelist="ef316dd2-e3b3-4032-b0b8-e9b51456a6c9" time="1375436855650" ignored="false" />
+    <file path="$PROJECT_DIR$/../../cleopatra/src/Core/Base/Model/BasePHPApp.php" changelist="ef316dd2-e3b3-4032-b0b8-e9b51456a6c9" time="1375551732783" ignored="false" />
+    <file path="$PROJECT_DIR$/../../cleopatra/src/Core/Base/Model/Base.php" changelist="ef316dd2-e3b3-4032-b0b8-e9b51456a6c9" time="1375552491697" ignored="false" />
+    <file path="/Base.php" changelist="ef316dd2-e3b3-4032-b0b8-e9b51456a6c9" time="1375581457307" ignored="false" />
+    <file path="/Cli.php" changelist="ef316dd2-e3b3-4032-b0b8-e9b51456a6c9" time="1375713388553" ignored="false" />
+    <file path="/var/www/goodfood-application/tests/functional/GoodFoodPSP_Scripts/cucumber.json" changelist="ef316dd2-e3b3-4032-b0b8-e9b51456a6c9" time="1375700621032" ignored="false" />
+    <file path="/CliView.tpl.php" changelist="ef316dd2-e3b3-4032-b0b8-e9b51456a6c9" time="1375699796720" ignored="false" />
+    <file path="/README.md" changelist="ef316dd2-e3b3-4032-b0b8-e9b51456a6c9" time="1375701794834" ignored="false" />
+    <file path="/info.Cli.php" changelist="ef316dd2-e3b3-4032-b0b8-e9b51456a6c9" time="1375703349256" ignored="false" />
+    <file path="/Generator.php" changelist="ef316dd2-e3b3-4032-b0b8-e9b51456a6c9" time="1375706367834" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,19 +176,37 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="install" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/install">
+      <file leaf-file-name="Cli.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Modules/Cli/Model/Cli.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+            <state line="21" column="61" selection-start="583" selection-end="583" vertical-scroll-proportion="0.6152344">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="install-silent" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/install-silent">
+      <file leaf-file-name="Generator.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Modules/Generator/Model/Generator.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="44" column="54" selection-start="1244" selection-end="1244" vertical-scroll-proportion="0.35270542">
+            <state line="147" column="44" selection-start="7143" selection-end="7143" vertical-scroll-proportion="-14.833333">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="info.CommandExec.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Modules/CommandExec/info.CommandExec.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="20" column="5" selection-start="503" selection-end="503" vertical-scroll-proportion="-6.3333335">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="info.Cli.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Modules/Cli/info.Cli.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="25" column="21" selection-start="515" selection-end="525" vertical-scroll-proportion="-15.625">
               <folding />
             </state>
           </provider>
@@ -90,13 +219,40 @@
       <setting name="OPEN_NEW_TAB" value="false" />
     </FindUsagesManager>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitLogSettings">
+    <option name="myDateState">
+      <MyDateState />
+    </option>
+  </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/install-silent" />
+        <option value="$PROJECT_DIR$/src/Modules/AppSettings/Model/AppConfig.php" />
+        <option value="$PROJECT_DIR$/src/Modules/Cli/Controller/Cli.php" />
+        <option value="$PROJECT_DIR$/src/Core/Base/Model/Base.php" />
+        <option value="$PROJECT_DIR$/src/Modules/CommandExec/Controller/CommandExec.php" />
+        <option value="$PROJECT_DIR$/src/Core/Base/Views/BlankLayout.tpl.php" />
+        <option value="$PROJECT_DIR$/src/Modules/CommandExec/Views/CommandExecView.tpl.php" />
+        <option value="$PROJECT_DIR$/src/Modules/CommandExec/Model/CommandExec.php" />
+        <option value="$PROJECT_DIR$/src/Modules/Cli/Views/CliView.tpl.php" />
+        <option value="$PROJECT_DIR$/README" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/src/Modules/CommandExec/info.CommandExec.php" />
+        <option value="$PROJECT_DIR$/src/Modules/Autopilot/info.Autopilot.php" />
+        <option value="$PROJECT_DIR$/src/Modules/Generator/info.Generator.php" />
+        <option value="$PROJECT_DIR$/src/Modules/Cli/info.Cli.php" />
+        <option value="$PROJECT_DIR$/src/Modules/Generator/Model/Generator.php" />
+        <option value="$PROJECT_DIR$/src/Modules/Cli/Model/Cli.php" />
       </list>
     </option>
   </component>
+  <component name="MavenProjectNavigator">
+    <treeState />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
     <option name="y" value="24" />
     <option name="width" value="1366" />
@@ -128,28 +284,42 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="dapperstrano" />
+              <option name="myItemId" value="parrallax" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="dapperstrano" />
+              <option name="myItemId" value="parrallax" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="devhelper" />
+              <option name="myItemId" value="parallax" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="parrallax" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="parallax" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -157,14 +327,65 @@
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="MemberChooser.sorted" value="false" />
-    <property name="last_opened_file_path" value="/var/www/bluevip" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../cleopatra" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
     <property name="MemberChooser.copyJavadoc" value="false" />
   </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/Modules" />
+      <recent name="$PROJECT_DIR$/src/Core/Base/Views" />
+    </key>
+  </component>
   <component name="RunManager">
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m" />
+      <option name="PROGRAM_PARAMETERS" />
+      <method />
+    </configuration>
     <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
       <method />
     </configuration>
     <configuration default="true" type="Applet" factoryName="Applet">
@@ -225,9 +446,9 @@
   <component name="ShelveChangesManager" show_recycled="false" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="9990e296-845b-4edb-b1ab-9a166fd4c1c8" name="Default" comment="" />
-      <created>1373070609055</created>
-      <updated>1373070609055</updated>
+      <changelist id="ef316dd2-e3b3-4032-b0b8-e9b51456a6c9" name="Default" comment="" />
+      <created>1375002891493</created>
+      <updated>1375002891493</updated>
     </task>
     <servers />
   </component>
@@ -235,30 +456,30 @@
     <frame x="0" y="24" width="1366" height="720" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952815" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329806" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32978722" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31354642" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21004567" sideWeight="0.67019403" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -303,7 +524,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge branch 'master' of https://github.com/phpengine/parallax&#10;&#10;Conflicts:&#10;&#9;README.md&#10;" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -317,21 +538,120 @@
     <option name="UPDATE_FILTER_BY_SCOPE" value="false" />
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
+    <MESSAGE value="Merge branch 'master' of https://github.com/phpengine/parallax&#10;&#10;Conflicts:&#10;&#9;README.md&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/install">
+    <entry file="file://$PROJECT_DIR$/src/Modules/Cli/Controller/Cli.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="55" selection-start="390" selection-end="390" vertical-scroll-proportion="-9.375">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Modules/Cli/Views/CliView.tpl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="82" selection-start="210" selection-end="210" vertical-scroll-proportion="-5.625">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Modules/CommandExec/Model/CommandExec.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="72" column="79" selection-start="3104" selection-end="3104" vertical-scroll-proportion="-10.375">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Modules/Autopilot/Views/AutopilotView.tpl.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/install-silent">
+    <entry file="file://$PROJECT_DIR$/README">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="54" selection-start="1244" selection-end="1244" vertical-scroll-proportion="0.35270542">
+        <state line="132" column="36" selection-start="5145" selection-end="5145" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="132" column="36" selection-start="5145" selection-end="5145" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Modules/AppSettings/info.AppSettings.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Modules/Autopilot/Controller/Autopilot.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="8.25">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Modules/Autopilot/Controller/AutopilotExecutor.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="42" selection-start="315" selection-end="315" vertical-scroll-proportion="-6.25">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Core/Base/Controller/Base.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="59" column="23" selection-start="2346" selection-end="2346" vertical-scroll-proportion="-8.166667">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Modules/Autopilot/info.Autopilot.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="5" selection-start="491" selection-end="491" vertical-scroll-proportion="0.19140625">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Modules/Generator/info.Generator.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="25" selection-start="821" selection-end="821" vertical-scroll-proportion="0.6953125">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Modules/CommandExec/info.CommandExec.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="5" selection-start="503" selection-end="503" vertical-scroll-proportion="-6.3333335">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Modules/Cli/info.Cli.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="21" selection-start="515" selection-end="525" vertical-scroll-proportion="-15.625">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Modules/Generator/Model/Generator.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="147" column="44" selection-start="7143" selection-end="7143" vertical-scroll-proportion="-14.833333">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Modules/Cli/Model/Cli.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="61" selection-start="583" selection-end="583" vertical-scroll-proportion="0.6152344">
           <folding />
         </state>
       </provider>

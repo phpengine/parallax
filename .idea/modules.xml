@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/dapperstrano.iml" filepath="$PROJECT_DIR$/dapperstrano.iml" />
+      <module fileurl="file://$PROJECT_DIR$//parallax.iml" filepath="$PROJECT_DIR$//parallax.iml" />
+      <module fileurl="file://$PROJECT_DIR$/parrallax.iml" filepath="$PROJECT_DIR$/parrallax.iml" />
     </modules>
   </component>
 </project>

@@ -20,10 +20,6 @@ class AutopilotInfo extends Base {
       return array("auto"=>"Autopilot", "autopilot"=>"Autopilot");
     }
 
-    public function autoPilotVariables() {
-      return array();
-    }
-
     public function helpDefinition() {
       $help = <<<"HELPDATA"
   This command is part of a default Module and provides you with a method by

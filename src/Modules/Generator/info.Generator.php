@@ -6,7 +6,7 @@ class GeneratorInfo extends Base {
 
     public $hidden = false;
 
-    public $name = "Dapperstrano Autopilot Generator";
+    public $name = "Parallax Autopilot Generator";
 
     public function __construct() {
       parent::__construct();
@@ -24,13 +24,12 @@ class GeneratorInfo extends Base {
       $help = <<<"HELPDATA"
   This command is part of Core and provides you with a method by which you can
   create Autopilot files from the command line.
-  You can configure default application settings, ie: mysql admin user, host, pass
 
   Generator, generator, generate, gen
 
         - create
         Go through all modules to create an autopilot
-        example: dapperstrano generate create
+        example: parallax generate create
 
 HELPDATA;
       return $help ;

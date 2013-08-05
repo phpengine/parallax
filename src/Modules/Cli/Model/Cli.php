@@ -7,13 +7,22 @@ class Cli extends Base {
     private $arrayOfCommands = array();
     private $commandResults = array();
 
+    public function runAutoPilot($autoPilot){
+      return $this->runAutopilotParallelCommand($autoPilot);
+    }
+
     public function askWhetherToRunParallelCommand() {
-        $doRunParallel = $this->askToScreenWhetherToRunParallelCommand();
-        if ($doRunParallel != true) {
-            return false ; }
-        $this->askForAllCommands() ;
-        return $this->executeAllCommandInput() ;
-        // true;
+      $doRunParallel = $this->askToScreenWhetherToRunParallelCommand();
+      if ($doRunParallel != true) {
+        return false ; }
+      $this->askForAllCommands() ;
+      return $this->executeAllCommandInput() ;
+    }
+
+    public function runAutopilotParallelCommand($autoPilot) {
+      if ( !isset($autoPilot["cliExecute"]) || $autoPilot["cliExecute"] !== true ) { return false; }
+      $this->askForAllCommands($autoPilot) ;
+      return $this->executeAllCommandInput() ;
     }
 
     public function askToScreenWhetherToRunParallelCommand() {
@@ -21,13 +30,17 @@ class Cli extends Base {
         return self::askYesOrNo($question, true);
     }
 
-    public function askForAllCommands() {
-        $commandInput = "anything";
-        while ($commandInput != "") {
+    public function askForAllCommands($autoPilot = null) {
+        if ( isset($autoPilot["cliCommands"]) ) {
+            $this->arrayOfCommands = $autoPilot["cliCommands"]; }
+        else {
+          $commandInput = "anything";
+          while ($commandInput != "") {
             $question = "Enter Command to include next. Enter none to end." ;
             $commandInput = self::askForInput($question) ;
             if ($commandInput != "") {
               $this->arrayOfCommands[] = $commandInput ; } }
+        }
     }
 
     private function executeAllCommandInput() {
@@ -55,7 +68,7 @@ class Cli extends Base {
           $completionStatus = substr($file->current(), 10, 1);
           if ($completionStatus=="1") {
             $file->seek(0);
-            echo "Completed task: ".substr($file->current(), 10);
+            echo "Completed task: ".substr($file->current(), 9);
             $file->seek(2);
             $exitStatus = substr($file->current(), 13, 1);
             $this->commandResults[] = $exitStatus;

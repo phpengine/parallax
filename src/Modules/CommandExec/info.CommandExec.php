@@ -20,16 +20,6 @@ class CommandExecInfo extends Base {
       return array("commandexec"=>"CommandExec", "commandExec"=>"CommandExec", "cx"=>"CommandExec");
     }
 
-    public function autoPilotVariables() {
-      return array(
-        "CommandExec" => array(
-          "commandExecExecute" => array(
-            "commandExecExecute" => "boolean",
-            "commandExecCommand" => "string") ,
-        ) ,
-      );
-    }
-
     public function helpDefinition() {
       $help = <<<"HELPDATA"
   This command is part of Core and handles Command Execution Functions. It is unlikely you'll need to manually
