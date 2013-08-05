@@ -141,7 +141,6 @@ class Generator extends Base {
                   $oneStep .= '"'.$stepEntryValueDataKey.'" => "'.$stepEntryValueDataValue[0].'",'."\n"; }
                 else {
                   $oneStep .= '"'.$stepEntryValueDataKey.'" => array(' ;
-                  var_dump($stepEntryValueData, $stepEntryValueDataValue);
                     foreach ($stepEntryValueDataValue as $entry) {
                       $oneStep .= '"'.$entry.'", '; }
                   $oneStep .= ')'."\n"; } } }
