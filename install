@@ -46,17 +46,19 @@ class Installer {
 
     private function askForProgramDataFolder() {
         $question = 'What is the program data directory?';
-        $question .= ' Found "/opt/'.$this->programNameMachine.'/'.$this->programNameMachine.'" - use this?' ;
-        $question .= ' (Enter nothing for yes, no end slash)';
+        $defaultDir = DIRECTORY_SEPARATOR.'opt'.DIRECTORY_SEPARATOR.$this->programNameMachine;
+        $defaultDir .= DIRECTORY_SEPARATOR.$this->programNameMachine;
+        $question .= ' Found "'.$defaultDir .'" - use this? (Enter nothing for yes, or enter without end slash)';
         $input = self::askForInput($question);
-        $this->programDataFolder = ($input=="") ? "/opt/$this->programNameMachine" : $input ;
+        $this->programDataFolder = ($input=="") ? $defaultDir : $input ;
     }
 
     private function askForProgramExecutorFolder(){
         $question = 'What is the program executor directory?';
-        $question .= ' Found "/usr/bin" - use this? (Enter nothing for yes, No Trailing Slash)';
+        $defaultDir = DIRECTORY_SEPARATOR.'usr'.DIRECTORY_SEPARATOR.'bin';
+        $question .= ' Found "'.$defaultDir.'" - use this? (Enter nothing for yes, or enter without trailing Slash)';
         $input = self::askForInput($question);
-        $this->programExecutorFolder = ($input=="") ? "/usr/bin" : $input ;
+        $this->programExecutorFolder = ($input=="") ? $defaultDir : $input ;
     }
 
     private function deleteProgramDataFolderAsRootIfExists(){
