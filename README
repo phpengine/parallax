@@ -4,15 +4,13 @@ Golden Contact Computing - Parallax
 About:
 -----------------
 
-Parallax executes multiple commands in parallel.
+Execute multiple commands in parallel. Great for executing test suites in Parallel - that's what its made for.
 
-The original use of this tool was to run Selenium Grid tests in parallel. The Selenium grid we're using is Saucelabs,
-but you can run parallel tests on any grid.
+If you're using BDD/Browser tests in your team (or any kind of tests that take a while), you might want to execute
+groups of them in parallel on different executors, so that you can save build time by spreading load.
 
-There are two ways to use Parallax. The first, is using a command line interface, which will ask you for the commands
-that you want executing
+Parallax is a must for your CI.
 
-parallax autopilot execute *autopilot-file*
 
 
 Installation
@@ -33,7 +31,9 @@ git clone https://github.com/phpengine/parallax && sudo php parallax/install
 
 ---------------------------------------
 
-The parallax Application
+
+
+The Parallax Application
 ---------------------------------------
 
 There are three directories in the src dir - Core, Extensions and Modules.
@@ -57,29 +57,77 @@ or override currently implemented classes with your own. Put them in here. Simpl
 
 
 
+
+Usage:
+-----------------
+
+So, there are a few simple commands...
+
+First, you can just use
+
+parallax
+
+...This will give you a list of the available modules...
+
+
+Then you can use
+
+parallax *ModuleName* help
+
+...This will display the help for that module, and tell you a list of available alias for the module command, and the
+available actions too.
+
+
+
 Available Commands:
 ---------------------------------------
 
-Remember - You can get full help on any command by entering parallax command help ie parallax install help.
+Remember - You can get full help on any command by entering parallax command help ie parallax cli help.
 Also Remember - parallax is very extendable and modular, so everything can be overridden easily and new commands or
 features can be added easily too. Below describes only the commands that are currently in core.
 
+appsettings
+
+      configure default parallax settings, ie: mysql admin user, host, pass, so that you don't need to enter them
+      every time you are at the CLI.
+
+      - set
+        Set a configuration value
+        example: parallax appsettings set
+
+      - get
+        Get the value of a setting you have configured
+        example: parallax appsettings get
+
+      - delete
+        Delete a setting you have configured
+        example: parallax appsettings delete
+
+      - list
+        Display a list of all default available settings
+        example: parallax appsettings list
+
 autopilot
+
       - execute
-        Use the presets provided in an autopilot file to execute multiple commands. Depending on your configuration,
-        you will not be asked any questions at the command line.
-        example: parallax autopilot execute *autopilot file path*
+        perform a silent install using the defaults in an autopilot file. Great for Remote Builds.
+        This is similar to the implementation of the Cap Deploy command of Capistrano.
+        example: parallax install autopilot
 
 cli
-      - execute
-        Use the CLI of parallax to enter the commands that you want to execute in parallel, then choose how you want the
-        output of these files to be stored. You can choose between aggregating all command output into a single file,
-        into multiple files, or forwarded to the output of parallax. You can also choose to fail exit on child fail.
-        This will mean that if any of the spawned processes end with a failed exit code, Parallax will too..
-        example: parallax cli execute
 
-background
       - execute
-        This is used by parallax to execute child processes. Its available, but you won't be using it outside of
-        development
-        example: parallax background execute
+        will initiate a cli for you to run parallel commands in. It will run each parallel command as a "parallax
+        commandexec", wait for all of them to finish, and then collate the output from all of those children commands
+        into the output for this parent command. Also, if any children commands finish with a failure exit status, the
+        "parallax install cli" parent will also. You will be asked for commands to execute.
+        example: parallax install cli
+
+commandexec, cx
+
+      - execute
+        Execute a single command spawned by parallax. Its unlikely you'll need to use this on its own  unless you're
+        developing for Parallax, as it just launches a command. if you provide the output file and command to execute as
+        parameters, it will execute silently.
+        example: parallax cx execute --output-file="/path/to/output/file.txt" --command-to-execute="command to run"
+        example: parallax cx execute
