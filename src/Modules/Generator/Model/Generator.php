@@ -100,7 +100,6 @@ class Generator extends Base {
               $question .= ' - this is one in an array of entries';
               while ($keepGoing == true) {
                 $miniRay[$autoVarTitle][$autoVariableDetailName][] = self::askForInput($question, true);
-                var_dump($miniRay);
                 $keepGoingQuestion = 'Add Another Array Entry? (Y/N)';
                 $keepGoingResult = self::askForInput($keepGoingQuestion, true);
                 $keepGoing = ($keepGoingResult == "Y" || $keepGoingResult == "y") ? true : false ; } } }

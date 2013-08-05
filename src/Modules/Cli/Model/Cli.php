@@ -49,11 +49,9 @@ class Cli extends Base {
         $tempScript = $this->makeCommandFile($command);
         $outfile = $this->getFileToWrite("final");
         $cmd = 'parallax cx execute --command-to-execute="sh '.$tempScript.'" --output-file="'.$outfile.'" > /dev/null &';
-        // echo $cmd."\n";
         system($cmd, $plxExit);
         $allPlxOuts[] = array($tempScript, $outfile); }
       $copyPlxOuts = $allPlxOuts;
-      // var_dump($allPlxOuts);
       $fileData = "";
       $ignores = array();
       sleep(3);
