@@ -67,7 +67,7 @@ class Base {
         $infoObject = \Core\AutoLoader::getSingleInfoObjectOfModel($currentKey);
         $miniRay["stepName"] = $infoObject->name ;
         $stepObject = new \ArrayObject($modelArray[$currentKey]);
-        $miniRay["installResult"] = $currentModel->runAutoPilot($stepObject);
+        $miniRay["stepResult"] = $currentModel->runAutoPilot($stepObject);
         // $miniRay["installResult"] = $currentModel->runAutoPilot($modelArray);
         $this->content["results"][] = $miniRay ; }
     }

@@ -87,15 +87,8 @@ class CommandExec extends Base {
 
     private function getFileToWrite($file_type) {
         $random = $this->baseTempDir.DIRECTORY_SEPARATOR.mt_rand(100, 99999999999);
-        $this->makeParentDirIfNeeded($this->baseTempDir);
         if ($file_type == "temp") { return $random.'temp.txt'; }
         if ($file_type == "final") { return $random.'final.txt'; }
         else { return null ; }
     }
-
-    private function makeParentDirIfNeeded($fileName) {
-        if (!file_exists(dirname($fileName))) {
-          mkdir(dirname($fileName), 0777, true) ; }
-    }
-
 }

@@ -12,6 +12,12 @@ class Base {
       $tempDirInConfig = (substr($tempDirInConfig, -1, 1) == "/") ?
         substr($tempDirInConfig, 0, strlen($tempDirInConfig)-1) : $tempDirInConfig ;
       $this->baseTempDir = ($tempDirInConfig == null ) ? "/tmp/parallax" : $tempDirInConfig ;
+      $this->makeParentDirIfNeeded($this->baseTempDir);
+    }
+
+    private function makeParentDirIfNeeded($fileName) {
+      if (!file_exists($fileName)) {
+        mkdir($fileName, 0777, true) ; }
     }
 
     protected function executeAndOutput($command, $message=null) {

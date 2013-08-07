@@ -80,27 +80,12 @@ class Cli extends Base {
 
     private function makeCommandFile($command) {
         $random = $this->baseTempDir.DIRECTORY_SEPARATOR.mt_rand(100, 99999999999);
-        $this->makeParentDirIfNeeded($this->baseTempDir);
         file_put_contents($random.'-parallax-temp.sh', $command);
         return $random.'-parallax-temp.sh';
     }
 
-    private function makeParentDirIfNeeded($fileName) {
-      if (!file_exists(dirname($fileName))) {
-        mkdir(dirname($fileName), 0777, true) ; }
-    }
-
-    private function findFilenameFromOutput($outputText) {
-        foreach ($outputText as $lineOfText) {
-            if (strlen($lineOfText)>0) {
-                echo "finalfile: $lineOfText\n";
-                return $lineOfText; } }
-        return null;
-    }
-
     private function getFileToWrite($file_type) {
       $random = $this->baseTempDir.DIRECTORY_SEPARATOR.mt_rand(100, 99999999999);
-      $this->makeParentDirIfNeeded($this->baseTempDir);
       if ($file_type == "temp") { return $random.'temp.txt'; }
       if ($file_type == "final") { return $random.'final.txt'; }
       else { return null ; }

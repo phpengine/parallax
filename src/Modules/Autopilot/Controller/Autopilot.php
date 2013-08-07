@@ -46,6 +46,8 @@ class Autopilot extends Base {
           include_once("autopilot-".$defaultName); }
         else if (file_exists($autoPilotFilePath)) {
           require_once($autoPilotFilePath); }
+        else if (file_exists($autoPilotFileName)) {
+          require_once($autoPilotFileName); }
         $autoPilot = (class_exists('\Core\AutoPilotConfigured')) ?
           new \Core\AutoPilotConfigured() : null ;
         return $autoPilot;
