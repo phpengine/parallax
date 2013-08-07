@@ -7,7 +7,7 @@ In Cli
 <?php
 
 if ($pageVars["cliResult"][1] == true) {
-  echo "At least one parallel command exited with 1 status, so am exiting with 1";
+  echo "At least one parallel command exited with 1 status (FAILED), so I am too...\n";
   exit(1); }
 
 ?>

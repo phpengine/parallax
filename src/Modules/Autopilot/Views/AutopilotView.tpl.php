@@ -3,18 +3,17 @@ Autopilot Install - <?php echo $pageVars["package-friendly"] ; ?> Installer:
 
 <?php
 
+$exit_statuses = array();
+
 foreach ($pageVars["results"] as $installResult) {
   echo $installResult["stepName"] . ': '."\n" ;
-  if (is_array($installResult["stepResult"]) ) {
-    foreach ($installResult["stepResult"] as $stepResult) {
-      echo $stepResult; } }
-  echo "\n\n" ;
-  $result = ($installResult["stepResult"] == true) ? "Success" : "Failure" ;
-  echo $result."\n" ;
+  echo $installResult["stepResult"][0] ;
+  echo "\n" ;
+  $exit_statuses[] = $installResult["stepResult"][1];
 }
 
-if ($pageVars["cliResult"][1] == true) {
-  echo "At least one parallel command exited with 1 status, so am exiting with 1";
+if (in_array(true, $exit_statuses)) {
+  echo "At least one parallel command exited with 1 status (FAILED), so I am too...\n";
   exit(1); }
 
 ?>
